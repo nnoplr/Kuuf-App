@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Register"
+                android:textSize="30dp" />
+
+
+
+            <EditText
+                android:id="@+id/RegisIsiUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Register"
+                android:layout_marginTop="10dp"
+                android:hint="Username"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+
+            <EditText
+                android:id="@+id/RegisIsiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RegisIsiUsername"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <EditText
+                android:id="@+id/RegisIsiConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RegisIsiPassword"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <EditText
+                android:id="@+id/RegisIsiPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RegisIsiConfirmPassword"
+                android:layout_marginTop="15dp"
+                android:inputType="phone"
+                android:hint="Phone Number"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+
+            <TextView
+                android:id="@+id/RegisDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RegisIsiPhone"
+                android:layout_marginTop="15dp"
+                android:text="Date of Birth"
+                android:textSize="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <Button
+                android:id="@+id/BtnPickDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick date"
+                android:layout_below="@+id/RegisIsiPhone"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+
+            <TextView
+                android:id="@+id/RegisGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RegisDOB"
+                android:layout_marginTop="23dp"
+                android:text="Gender"
+                android:textSize="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/RadioGroupGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/RegisDOB"
+                android:layout_toRightOf="@id/RegisGender"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="16dp">
+
+                <RadioButton
+                    android:id="@+id/RadioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+                    android:id="@+id/RadioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="16dp"/>
+
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/RegisCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RadioGroupGender"
+                android:layout_marginTop="15dp"
+                android:text="I agree to terms and condition"
+                android:textSize="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <Button
+                android:id="@+id/BtnRegister2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RegisCheckBox"
+                android:layout_marginTop="20dp"
+                android:text="Register"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/AskToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have an account?"
+                android:layout_below="@id/BtnRegister2"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/BtnLogin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AskToLogin"
+                android:layout_marginTop="5dp"
+                android:text="Login"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
